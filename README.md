@@ -48,7 +48,7 @@ year = {2022}
 Create a new virtual environment and install the dependencies defined in `requirements.txt`:
 
 ```bash
-# Make sure you have Python 3.7 installed
+# the code has been tested with Python 3.7 
 python3.7 -m venv .venv_xsmiles_usecases
 source ./.venv_xsmiles_usecases/bin/activate # path to the created environment
 pip3 install -r requirements.txt
