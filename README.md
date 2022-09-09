@@ -64,19 +64,6 @@ pip install cddd-1.2.2-py3.none.any.whl
 
 Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them.
 
-#### [Optional] XSMILES from .whl file
-
-If you don't want to install XSMILES from pipy (requirements.txt), you can install the .whl file available [here](https://github.com/Bayer-Group/xsmiles-jupyterlab)
-
-```bash
-pip install xsmiles-0.2.1.dev0-py2.py3-none-any.whl
-```
-
-#### Internet connection is a requirement
-
-The plugin will download RDkit MinimalLib when the JupyterLab notebook is loaded.
-
-
 ## Step 3 - Run JupyterLab
 
 Run JupyterLab and choose a notebook to explore:
@@ -84,3 +71,19 @@ Run JupyterLab and choose a notebook to explore:
 ```bash
 jupyter lab notebooks
 ```
+
+## Notes
+
+### XSMILES from .whl file
+
+If you don't want to install XSMILES from pipy (requirements.txt), you can install the .whl file available [here](https://github.com/Bayer-Group/xsmiles-jupyterlab)
+
+```bash
+pip install xsmiles-0.2.1.dev0-py2.py3-none-any.whl
+```
+
+### Internet connection is a requirement
+
+The plugin will download RDkit MinimalLib when the JupyterLab notebook is loaded.
+
+
