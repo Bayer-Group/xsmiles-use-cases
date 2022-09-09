@@ -44,7 +44,7 @@ year = {2022}
 
 ## How to run the notebook
 
-### Step 1 - Install general dependencies
+### Step 1 - Install general dependencies and XSMILES
 Create a new virtual environment and install the dependencies defined in `requirements.txt`:
 
 ```bash
