@@ -64,6 +64,8 @@ pip install cddd-1.2.2-py3.none.any.whl
 
 Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them, as well as on `python <= 3.7`.
 
+You can use XSMILES for JupyterLab with newer versions of python. This dependency on Python 3.7 is here only for the CDDD model to work.
+
 ## Step 3 - Run JupyterLab
 
 Run JupyterLab and choose a notebook to explore:
