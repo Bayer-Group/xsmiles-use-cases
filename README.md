@@ -48,7 +48,7 @@ year = {2022}
 Create a new virtual environment and install the dependencies defined in `requirements.txt`:
 
 ```bash
-# the code has been tested with Python 3.7 
+# the code has been tested with Python 3.7, it's a dependency from CDDD
 python3.7 -m venv .venv_xsmiles_usecases
 source ./.venv_xsmiles_usecases/bin/activate # path to the created environment
 pip3 install -r requirements.txt
@@ -62,7 +62,7 @@ An unofficial package for CDDD is available in this repository: `cddd-1.2.2-py3.
 pip install cddd-1.2.2-py3.none.any.whl
 ```
 
-Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them.
+Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them, as well as python <= 3.7.
 
 ## Step 3 - Run JupyterLab
 
