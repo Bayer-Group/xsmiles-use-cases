@@ -47,8 +47,10 @@ year = {2022}
 ### Step 1 - Install general dependencies
 Create a new virtual environment and install the dependencies defined in `requirements.txt`:
 
+Note that the examples use CDDD model which depends on Tensorflow 1.X. Tensorflow 1.X supports only Python versions <= 3.7. Please make sure the Python version is compatible.  
+
 ```bash
-# Make sure you have Python 3.7 installed
+# the code has been tested with Python 3.7 
 python3.7 -m venv .venv_xsmiles_usecases
 source ./.venv_xsmiles_usecases/bin/activate # path to the created environment
 pip3 install -r requirements.txt
