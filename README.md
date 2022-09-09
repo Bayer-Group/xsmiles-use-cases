@@ -47,8 +47,6 @@ year = {2022}
 ### Step 1 - Install general dependencies
 Create a new virtual environment and install the dependencies defined in `requirements.txt`:
 
-Note that the examples use CDDD model which depends on Tensorflow 1.X. Tensorflow 1.X supports only Python versions <= 3.7. Please make sure the Python version is compatible.  
-
 ```bash
 # the code has been tested with Python 3.7 
 python3.7 -m venv .venv_xsmiles_usecases
@@ -56,30 +54,28 @@ source ./.venv_xsmiles_usecases/bin/activate # path to the created environment
 pip3 install -r requirements.txt
 ```
 
-### Step 2 - Install XSMILES and CDDD
-
-Required: internet connection. The plugin will download RDkit MinimalLib when the JupyterLab notebook is loaded.
-
-To be able to visualize the XAI scores, you need to install XSMILES and CDDD.
-
-XSMILES for JupyterLab is available here: https://github.com/Bayer-Group/xsmiles-jupyterlab. You want to download the `xsmiles-0.2.2.dev0-py2.py3-none-any.whl` file from the releases page.
+### Step 2 - Install CDDD 
 
 An unofficial package for CDDD is available in this repository: `cddd-1.2.2-py3.none.any.whl`. We packed [CDDD scripts and the CDDD default_model](https://github.com/jrwnter/cddd) into a single package to use in the notebook more easily, as well as to use with our Substitution method (`attributor.py`). Please check the `smiles_attributions` notebook to see how to we use the package and import the CDDD default model. We created this package because in certain environments, Google Drive may be blocked by firewalls.
 
-<!-- If XSMILES cannot be installed through `pip` `requirements.txt`, check how to install it here: https://xsmiles-ipywidget. -->
-
-<!-- ```bash
-pip install xsmiles
-```
-
-or -->
-
 ```bash
-pip install xsmiles-0.2.1.dev0-py2.py3-none-any.whl
 pip install cddd-1.2.2-py3.none.any.whl
 ```
 
-Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed through `requirements.txt`, CDDD depends on them.
+Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them.
+
+#### [Optional] XSMILES from .whl file
+
+If you don't want to install XSMILES from pipy (requirements.txt), you can install the .whl file available [here](https://github.com/Bayer-Group/xsmiles-jupyterlab)
+
+```bash
+pip install xsmiles-0.2.1.dev0-py2.py3-none-any.whl
+```
+
+#### Internet connection is a requirement
+
+The plugin will download RDkit MinimalLib when the JupyterLab notebook is loaded.
+
 
 ## Step 3 - Run JupyterLab
 
