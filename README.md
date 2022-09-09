@@ -62,7 +62,7 @@ An unofficial package for CDDD is available in this repository: `cddd-1.2.2-py3.
 pip install cddd-1.2.2-py3.none.any.whl
 ```
 
-Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them, as well as `python <= 3.7`.
+Make sure `tensorboard==1.13.1` and `tensorflow==1.13.2` were installed correctly through `requirements.txt`, CDDD depends on them, as well as on `python <= 3.7`.
 
 ## Step 3 - Run JupyterLab
 
