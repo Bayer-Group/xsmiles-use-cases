@@ -10,5 +10,5 @@ shap==0.41.0
 catboost==1.0.6
 # sklranger==0.7.0
 tensorboard==1.13.1
-tensorflow==1.13.2
+tensorflow==2.11.1
 xsmiles==0.2.2
